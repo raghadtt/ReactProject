@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Training2/static/css/main.a617e044.chunk.css",
+    "main.js": "/Training2/static/js/main.1e760233.chunk.js",
+    "main.js.map": "/Training2/static/js/main.1e760233.chunk.js.map",
+    "runtime-main.js": "/Training2/static/js/runtime-main.cbac0fc4.js",
+    "runtime-main.js.map": "/Training2/static/js/runtime-main.cbac0fc4.js.map",
+    "static/js/2.b9bd7cb3.chunk.js": "/Training2/static/js/2.b9bd7cb3.chunk.js",
+    "static/js/2.b9bd7cb3.chunk.js.map": "/Training2/static/js/2.b9bd7cb3.chunk.js.map",
+    "static/js/3.467955eb.chunk.js": "/Training2/static/js/3.467955eb.chunk.js",
+    "static/js/3.467955eb.chunk.js.map": "/Training2/static/js/3.467955eb.chunk.js.map",
+    "index.html": "/Training2/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/Training2/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.b9bd7cb3.chunk.js.LICENSE.txt": "/Training2/static/js/2.b9bd7cb3.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/Training2/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cbac0fc4.js",
+    "static/js/2.b9bd7cb3.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.1e760233.chunk.js"
+  ]
+}
