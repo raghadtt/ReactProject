@@ -1,0 +1,42 @@
+$radius : 10px;
+$display: flex;
+$flex-direction: column;
+$color: whitesmoke;
+
+body{
+    background-color: lightseagreen;
+}
+h1{
+    color: white;
+}
+.board{
+    display: $display;
+    flex-direction: $flex-direction;
+    align-items: center;
+}
+.list{
+    background-color: #BEE4F7;
+    width: 38%;
+    height: 350px;
+    border-radius: $radius;
+    display: $display;
+    flex-direction: $flex-direction;
+}
+.add{
+    background-color: $color;
+    width: 88%;
+    margin: 4%;
+    margin-top: 2%;
+    border-radius: $radius;
+    padding: 1.8%;
+    border-width: 0;
+}
+.icon{
+    float: right;
+    padding: 0;
+    border-width: 0;
+    border-radius: $radius;
+    font-size: 18px;
+    background-color: $color;
+    cursor: pointer;
+}
