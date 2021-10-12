@@ -3,9 +3,7 @@ import Board from './pages/board';
 function App() {
   return (
     <div>
-      <header >
-        <Board />
-      </header>
+      <Board />
     </div>
   );
 }

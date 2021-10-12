@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+
 import './card.scss';
 
 function Card(props) {
 
     return (
-        <div className="card">
+        <div className="Card">
             {props.name}
         </div>
     );

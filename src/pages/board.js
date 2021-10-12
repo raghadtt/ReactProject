@@ -1,36 +1,50 @@
 import { useState } from 'react';
+
+import { FaPlus } from 'react-icons/fa';
+
 import Popup from '../components/popup';
 import Card from '../components/card';
-import { FaPlus } from 'react-icons/fa';
 import './board.scss';
 
 function Board(props) {
     const [pressed, setPressed] = useState(false);
     const [newTask, setNewTask] = useState([]);
 
-    const handle_popup = (name) => {
+    const handlePopup = (name) => {
         setPressed(!pressed)
-        if (name != "") {
+        addTasks(name);
+    }
+    const addTasks = (name) => {
+        if (name !== "") {
             setNewTask([...newTask, name]);
         }
     }
-
+    const showTasks = () => {
+        return newTask.map((item) => {
+            return (
+                <div>
+                    <Card name={item} />
+                </div>);
+        })
+    }
     return (
-        <div className="board">
+        <div className="Board">
             <h1>
                 To-do list
             </h1>
-            <div className="list">
+            <div className="List">
                 <div>
-                    {newTask.length == 0 ? null : (newTask.map((item) => { return (<Card name={item} />); }))}
+                    {newTask.length !== 0 && showTasks()}
                 </div>
-                <div className="add">
-                    <button className="icon" onClick={() => setPressed(!pressed)}>
+                <div className="Add">
+                    <button
+                        className="Icon"
+                        onClick={() => setPressed(!pressed)}>
                         <FaPlus />
                     </button>
                 </div>
             </div>
-            {pressed ? <Popup toggle={handle_popup} /> : null}
+            {pressed && <Popup toggle={handlePopup} />}
         </div >
     );
 }

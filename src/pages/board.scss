@@ -1,29 +1,33 @@
-$radius : 10px;
-$display: flex;
-$flex-direction: column;
-$color: whitesmoke;
+@import "../main.scss";
 
-body{
-    background-color: lightseagreen;
+$radius : 10px;
+
+body {
+    background-color: $color-green;
 }
-h1{
+
+h1 {
     color: white;
 }
-.board{
-    display: $display;
-    flex-direction: $flex-direction;
+
+.Board {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
-.list{
+
+.List {
+    overflow-y: auto;
     background-color: #BEE4F7;
     width: 38%;
     height: 350px;
     border-radius: $radius;
-    display: $display;
-    flex-direction: $flex-direction;
+    display: flex;
+    flex-direction: column;
 }
-.add{
-    background-color: $color;
+
+.Add {
+    background-color: $bgColor;
     width: 88%;
     margin: 4%;
     margin-top: 2%;
@@ -31,12 +35,12 @@ h1{
     padding: 1.8%;
     border-width: 0;
 }
-.icon{
+.Icon {
     float: right;
     padding: 0;
     border-width: 0;
     border-radius: $radius;
-    font-size: 18px;
-    background-color: $color;
+    font-size: $percent;
+    background-color: $bgColor;
     cursor: pointer;
 }
