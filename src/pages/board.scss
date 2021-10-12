@@ -1,0 +1,84 @@
+<<<<<<< HEAD
+$radius : 10px;
+$display: flex;
+$flex-direction: column;
+$color: whitesmoke;
+
+body{
+    background-color: lightseagreen;
+}
+h1{
+    color: white;
+}
+.board{
+    display: $display;
+    flex-direction: $flex-direction;
+    align-items: center;
+}
+.list{
+=======
+@import "../main.scss";
+
+$radius : 10px;
+
+body {
+    background-color: $color-green;
+}
+
+h1 {
+    color: white;
+}
+
+.Board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.List {
+    overflow-y: auto;
+>>>>>>> update project
+    background-color: #BEE4F7;
+    width: 38%;
+    height: 350px;
+    border-radius: $radius;
+<<<<<<< HEAD
+    display: $display;
+    flex-direction: $flex-direction;
+}
+.add{
+    background-color: $color;
+=======
+    display: flex;
+    flex-direction: column;
+}
+
+.Add {
+    background-color: $bgColor;
+>>>>>>> update project
+    width: 88%;
+    margin: 4%;
+    margin-top: 2%;
+    border-radius: $radius;
+    padding: 1.8%;
+    border-width: 0;
+}
+<<<<<<< HEAD
+.icon{
+=======
+
+.Icon {
+>>>>>>> update project
+    float: right;
+    padding: 0;
+    border-width: 0;
+    border-radius: $radius;
+<<<<<<< HEAD
+    font-size: 18px;
+    background-color: $color;
+=======
+    font-size: $percent;
+    background-color: $bgColor;
+>>>>>>> update project
+    cursor: pointer;
+}
