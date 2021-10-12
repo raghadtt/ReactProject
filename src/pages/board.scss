@@ -1,0 +1,46 @@
+@import "../main.scss";
+
+$radius : 10px;
+
+body {
+    background-color: $color-green;
+}
+
+h1 {
+    color: white;
+}
+
+.Board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.List {
+    overflow-y: auto;
+    background-color: #BEE4F7;
+    width: 38%;
+    height: 350px;
+    border-radius: $radius;
+    display: flex;
+    flex-direction: column;
+}
+
+.Add {
+    background-color: $bgColor;
+    width: 88%;
+    margin: 4%;
+    margin-top: 2%;
+    border-radius: $radius;
+    padding: 1.8%;
+    border-width: 0;
+}
+.Icon {
+    float: right;
+    padding: 0;
+    border-width: 0;
+    border-radius: $radius;
+    font-size: $percent;
+    background-color: $bgColor;
+    cursor: pointer;
+}
